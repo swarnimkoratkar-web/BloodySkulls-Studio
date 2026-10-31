@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloody Skulls // Unity 6 Production Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <canvas id="engine-bg-canvas"></canvas>
+
+    <header class="studio-header">
+        <div class="logo">Bloody Skulls Studio</div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#founder">Founder</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="monolith-section">
+            <div class="hud-frame">
+                <div class="hud-glitch-text" data-glitch="System Initialization: Active">System Initialization: Active</div>
+                <div class="hud-engine-ver">Engine: Unity 6 URP</div>
+            </div>
+
+            <div class="hero-experience-grid">
+                <div class="hero-text-frame">
+                    <h1 class="hero-title">
+                        Bloody<br>
+                        <span class="outline-text">Skulls</span>
+                    </h1>
+                    <p class="hero-subtitle">Engineering responsive gameplay systems, custom C# architecture, and optimized mobile pipelines. Available for client prototyping and production contracts.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="action-btn primary-btn">Hire / Request Quote</a>
+                        <a href="#projects" class="action-btn secondary-btn">View Projects</a>
+                    </div>
+                </div>
+
+                <div class="viewport-media-placeholder" style="background: #000000; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 2rem;">
+                    <div class="scanline-overlay"></div>
+                    <div class="crt-static-noise"></div>
+
+                    <div class="viewport-brackets">
+                        <div class="bracket tl"></div>
+                        <div class="bracket tr"></div>
+                        <div class="bracket bl"></div>
+                        <div class="bracket br"></div>
+                    </div>
+
+                    <div class="horror-glitch-container">
+                        <img src="assets/images/branding/logo.png" alt="Bloody Skulls Core" class="skull-layer base">
+                    </div>
+
+                    <div class="viewport-hud-metadata">
+                        <span>PIPELINE: STABLE</span>
+                        <span style="color: var(--accent-color); font-weight: bold; animation: heartbeat 1.5s infinite alternate;">● AVAILABLE FOR WORK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="split-services-section">
+            <span class="section-tagline">Client Deliverables</span>
+            <h2 class="clean-section-header" data-glitch="Services">Services</h2>
+            
+            <div class="services-blueprint-grid">
+                <div class="blueprint-node-card">
+                    <div class="node-header">
+                        <span class="node-status-pin"></span>
+                        <span class="node-index">01 // PROTOTYPING</span>
+                    </div>
+                    <div class="node-body">
+                        <h3 class="node-title">Game Prototyping</h3>
+                        <p class="node-desc">Rapid prototyping of core gameplay loops, player controllers, and vertical slices ready for publisher pitches or user testing.</p>
+                    </div>
+                    <div class="node-footer-tags">
+                        <span>Unity 6</span>
+                        <span>C# Core</span>
+                        <span>Rapid Prototyping</span>
+                    </div>
+                    <div class="node-laser-edge"></div>
+                </div>
+
+                <div class="blueprint-node-card">
+                    <div class="node-header">
+                        <span class="node-status-pin"></span>
+                        <span class="node-index">02 // GAMEPLAY CODE</span>
+                    </div>
+                    <div class="node-body">
+                        <h3 class="node-title">Systems & AI Programming</h3>
+                        <p class="node-desc">Custom state machines, offline bot intelligence, camera rigging, player combat flow, and Netcode synchronization.</p>
+                    </div>
+                    <div class="node-footer-tags">
+                        <span>Netcode NGO</span>
+                        <span>Host / Client</span>
+                        <span>Bot AI</span>
+                    </div>
+                    <div class="node-laser-edge"></div>
+                </div>
+
+                <div class="blueprint-node-card">
+                    <div class="node-header">
+                        <span class="node-status-pin"></span>
+                        <span class="node-index">03 // MOBILE READY</span>
+                    </div>
+                    <div class="node-body">
+                        <h3 class="node-title">Monetization & Ads</h3>
+                        <p class="node-desc">Integration of LevelPlay, rewarded video reward-callbacks, Google Play Store compliance, and draw-call performance profiling.</p>
+                    </div>
+                    <div class="node-footer-tags">
+                        <span>LevelPlay SDK</span>
+                        <span>Currency Shop</span>
+                        <span>Mobile Perf</span>
+                    </div>
+                    <div class="node-laser-edge"></div>
+                </div>
+
+                <div class="blueprint-node-card">
+                    <div class="node-header">
+                        <span class="node-status-pin"></span>
+                        <span class="node-index">04 // ART & UI</span>
+                    </div>
+                    <div class="node-body">
+                        <h3 class="node-title">3D Assets & UI Systems</h3>
+                        <p class="node-desc">Low-poly 3D environment assets optimized in Blender, 2D skeletal rigging, and high-performance UI Toolkit interface layouts.</p>
+                    </div>
+                    <div class="node-footer-tags">
+                        <span>Blender</span>
+                        <span>URP Shaders</span>
+                        <span>UI Toolkit</span>
+                    </div>
+                    <div class="node-laser-edge"></div>
+                </div>
+
+                <div class="blueprint-node-card">
+                    <div class="node-header">
+                        <span class="node-status-pin"></span>
+                        <span class="node-index">05 // VISUAL FX</span>
+                    </div>
+                    <div class="node-body">
+                        <h3 class="node-title">Particle VFX & Shaders</h3>
+                        <p class="node-desc">Universal Render Pipeline (URP) particle systems, neon emissive materials, audio-reactive pulses, and camouflage shaders.</p>
+                    </div>
+                    <div class="node-footer-tags">
+                        <span>URP VFX</span>
+                        <span>Particle Systems</span>
+                        <span>Custom Shaders</span>
+                    </div>
+                    <div class="node-laser-edge"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="buffer-projects-section">
+            <span class="section-tagline">Shipped & In-Development</span>
+            <h2 class="clean-section-header" data-glitch="Projects">Projects</h2>
+
+            <div class="portfolio-stack">
+                
+                <!-- PROJECT 1: PIRATES GAMBLE -->
+                <div class="portfolio-row" data-project="pirates-gamble">
+                    <div class="row-header">
+                        <div class="project-meta-left">
+                            <span class="project-row-num">01</span>
+                            <h3 class="project-title">Pirates Gamble</h3>
+                        </div>
+                        <div class="project-meta-right">
+                            <span class="project-tag">3D Multiplayer Strategy</span>
+                            <span class="project-engine">Unity 6 / Android</span>
+                            <span class="project-expand-badge">See Info ↓</span>
+                        </div>
+                    </div>
+
+                    <div class="project-feature-pills">
+                        <span class="pill">Host / Client Multiplayer</span>
+                        <span class="pill">Offline Bot AI</span>
+                        <span class="pill">Rewarded Video Ads</span>
+                        <span class="pill">3D Card Game Mechanics</span>
+                    </div>
+
+                    <div class="row-body-expansion">
+                        <div class="project-specs-grid">
+                            <div class="spec-block">
+                                <h4>Systems & Architecture</h4>
+                                <p>A 3D tactical card game built with an authoritative Host/Client networking model. Features custom local bot intelligence for offline simulation, complete card deck shuffle logic, and an integrated rewarded video monetization loop.</p>
+                                
+                                <h4 style="margin-top: 1.5rem;">Production Breakdowns</h4>
+                                <div class="project-media-strip">
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/pirates_mesh.jpg" alt="Pirates Gamble 3D Assets" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>3D Mesh</text></svg>'">
+                                        <span>3D Asset Rig</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/pirates_ui.jpg" alt="Pirates Gamble Card HUD" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>UI Layout</text></svg>'">
+                                        <span>Card Combat UI</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/pirates_table.jpg" alt="Pirates Gamble Board Setup" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Table Setup</text></svg>'">
+                                        <span>Game Board 3D</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spec-block">
+                                <h4>Technical Specs</h4>
+                                <p>
+                                    <strong>Networking:</strong> Host / Client Netcode Rooms<br>
+                                    <strong>Monetization:</strong> Rewarded Ads Callback<br>
+                                    <strong>Timeline:</strong> 5 Months Production<br>
+                                    <strong>Platform:</strong> Android Architecture (APK)
+                                </p>
+                            </div>
+
+                            <div class="spec-media-frame landscape-mobile">
+                                <video loop playsinline muted>
+                                    <source src="assets/images/projects/pirates_loop.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls-overlay">
+                                    <button class="video-ctrl-btn" onclick="togglePlayPause(this)" aria-label="Play or Pause">▶</button>
+                                    <button class="video-ctrl-btn video-audio-toggle-btn" onclick="toggleMute(this)" aria-label="Toggle Audio">🔇</button>
+                                    <button class="video-ctrl-btn" onclick="toggleFullscreen(this)" aria-label="Fullscreen">⛶</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: NEON CAVERN -->
+                <div class="portfolio-row" data-project="neon-cavern">
+                    <div class="row-header">
+                        <div class="project-meta-left">
+                            <span class="project-row-num">02</span>
+                            <h3 class="project-title">Neon Cavern</h3>
+                        </div>
+                        <div class="project-meta-right">
+                            <span class="project-tag">Audio-Reactive Runner</span>
+                            <span class="project-engine">Unity 6 / Android</span>
+                            <span class="project-expand-badge">See Info ↓</span>
+                        </div>
+                    </div>
+
+                    <div class="project-feature-pills">
+                        <span class="pill">In-Game Currency Shop</span>
+                        <span class="pill">Audio-Reactive Obstacles</span>
+                        <span class="pill">Neon Lighting & Shaders</span>
+                        <span class="pill">Second Chance Ad Revives</span>
+                        <span class="pill">Collectables System</span>
+                    </div>
+
+                    <div class="row-body-expansion">
+                        <div class="project-specs-grid portrait-grid-layout">
+                            <div class="spec-block">
+                                <h4>Systems & Economy</h4>
+                                <p>An endless runner lit with dynamic URP neon lighting and emissive glow shaders. Obstacles react physically to sound frequencies and audio beats. Incorporates a currency collectables system, in-game shop, and rewarded ad revives.</p>
+
+                                <h4 style="margin-top: 1.5rem;">Production Breakdowns</h4>
+                                <div class="project-media-strip">
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/neon_shop.jpg" alt="Neon Cavern In-game Shop" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Shop UI</text></svg>'">
+                                        <span>Upgrade Shop UI</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/neon_vfx.jpg" alt="Neon Cavern Shaders" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Neon Shaders</text></svg>'">
+                                        <span>Emissive Glow VFX</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/neon_obstacles.jpg" alt="Neon Cavern Procedural Spawner" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Cave Spawner</text></svg>'">
+                                        <span>Procedural Track</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spec-block">
+                                <h4>Technical Specs</h4>
+                                <p>
+                                    <strong>Economy:</strong> Virtual Shop & Currency<br>
+                                    <strong>Visuals:</strong> Custom Neon Emissive Shaders<br>
+                                    <strong>Timeline:</strong> 4 Months Production<br>
+                                    <strong>Platform:</strong> Android Architecture (APK)
+                                </p>
+                            </div>
+
+                            <div class="spec-media-frame portrait-mobile">
+                                <video loop playsinline muted>
+                                    <source src="assets/images/projects/neon_loop.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls-overlay">
+                                    <button class="video-ctrl-btn" onclick="togglePlayPause(this)" aria-label="Play or Pause">▶</button>
+                                    <button class="video-ctrl-btn video-audio-toggle-btn" onclick="toggleMute(this)" aria-label="Toggle Audio">🔇</button>
+                                    <button class="video-ctrl-btn" onclick="toggleFullscreen(this)" aria-label="Fullscreen">⛶</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: META CHAMELEON (WITH GOOGLE PLAY VERIFICATION BUTTON) -->
+                <div class="portfolio-row" data-project="meta-chameleon">
+                    <div class="row-header">
+                        <div class="project-meta-left">
+                            <span class="project-row-num">03</span>
+                            <h3 class="project-title">Meta Chameleon</h3>
+                        </div>
+                        <div class="project-meta-right">
+                            <span class="project-tag">Multiplayer Hide & Seek</span>
+                            <span class="project-engine">Unity 6 / Android</span>
+                            <span class="project-expand-badge">See Info ↓</span>
+                        </div>
+                    </div>
+
+                    <div class="project-feature-pills">
+                        <span class="pill">Google Play Live</span>
+                        <span class="pill">Public Lobby Matchmaking</span>
+                        <span class="pill">2 Distinct 3D Maps</span>
+                        <span class="pill">Dynamic Paint Shaders</span>
+                        <span class="pill">Draw-Call Mobile Opts</span>
+                        <span class="pill">LevelPlay Ad Mediation</span>
+                    </div>
+
+                    <div class="row-body-expansion">
+                        <div class="project-specs-grid">
+                            <div class="spec-block">
+                                <h4>Matchmaking & Shaders</h4>
+                                <p>Fast-paced multiplayer game built on Unity Netcode with public matchmaking lobbies. Features two completed 3D playground maps, texture atlasing, low draw calls, dynamic camouflage painting shaders, and LevelPlay ad mediation.</p>
+
+                                <h4 style="margin-top: 1.5rem;">Production Breakdowns</h4>
+                                <div class="project-media-strip">
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/meta_map1.jpg" alt="Meta Chameleon Map 1" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Map 01 3D</text></svg>'">
+                                        <span>Map 01: Playground</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/meta_map2.jpg" alt="Meta Chameleon Map 2" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Map 02 3D</text></svg>'">
+                                        <span>Map 02: Vertical Arena</span>
+                                    </div>
+                                    <div class="media-thumb-card">
+                                        <img src="assets/images/projects/meta_lobby.jpg" alt="Meta Chameleon Matchmaking Lobby" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2275%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23111%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%23555%22 font-family=%22monospace%22 font-size=%2210%22 text-anchor=%22middle%22 dy=%22.3em%22>Lobby UI</text></svg>'">
+                                        <span>Public Lobby UI</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spec-block">
+                                <h4>Technical Specs & Verification</h4>
+                                <p>
+                                    <strong>Matchmaking:</strong> Public Lobbies & Unity Relay<br>
+                                    <strong>Environments:</strong> 2 Complete 3D Maps<br>
+                                    <strong>Performance:</strong> Mobile Draw-Call Batching<br>
+                                    <strong>Status:</strong> Published on Google Play
+                                </p>
+                                <!-- Direct Play Store Link -->
+                                <div style="margin-top: 1.5rem;">
+                                    <a href="https://play.google.com/store/apps/details?id=com.bloodyskulls.metachameleon&hl=en-US" target="_blank" rel="noopener noreferrer" class="store-badge-link">
+                                        <span>GET IT ON</span>
+                                        <strong>Google Play Store ↗</strong>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="spec-media-frame landscape-mobile">
+                                <video loop playsinline muted>
+                                    <source src="assets/images/projects/mumbai_loop.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-controls-overlay">
+                                    <button class="video-ctrl-btn" onclick="togglePlayPause(this)" aria-label="Play or Pause">▶</button>
+                                    <button class="video-ctrl-btn video-audio-toggle-btn" onclick="toggleMute(this)" aria-label="Toggle Audio">🔇</button>
+                                    <button class="video-ctrl-btn" onclick="toggleFullscreen(this)" aria-label="Fullscreen">⛶</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="studio-about-section">
+            <span class="section-tagline">Studio Identity</span>
+            <h2 class="clean-section-header" data-glitch="About Studio">About Studio</h2>
+            
+            <div class="about-terminal-layout">
+                <div class="about-manifest-block">
+                    <h3 class="manifest-headline">Bringing Unfiltered Indian Culture to Global Interactive Entertainment.</h3>
+                    <p class="manifest-paragraph">
+                        Bloody Skulls was founded to build immersive interactive experiences that bridge intense cultural flavor with smooth, engaging gameplay loops.
+                    </p>
+                    <p class="manifest-paragraph">
+                        From Tier 3 localities to neon-drenched urban settings, our development pipelines honor authentic folklore, community narratives, and high-performance game engineering.
+                    </p>
+                </div>
+
+                <div class="about-pipeline-spec">
+                    <div class="spec-node-header">
+                        <span class="spec-pulse-dot"></span>
+                        <span class="spec-title">STUDIO_PIPELINE // CONTRACT READY</span>
+                    </div>
+                    <div class="spec-body-list">
+                        <div class="spec-item-row">
+                            <span class="spec-label">Target Scope:</span>
+                            <span class="spec-value">End-to-End Game Prototyping & System Development.</span>
+                        </div>
+                        <div class="spec-item-row">
+                            <span class="spec-label">Core Focus:</span>
+                            <span class="spec-value">Responsive mechanics, mobile ad optimization, and netcode.</span>
+                        </div>
+                        <div class="spec-item-row">
+                            <span class="spec-label">Availability:</span>
+                            <span class="spec-value accent-text">Open for Freelance Contracts & Projects.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FOUNDER SECTION -->
+        <section id="founder" class="flat-team-section">
+            <span class="section-tagline">Studio Leadership</span>
+            <h2 class="clean-section-header" data-glitch="Founder">Studio Founder</h2>
+            
+            <div class="team-terminal-grid">
+                <div class="developer-monolith-card">
+                    <div class="card-radar-glitch"></div>
+                    
+                    <div class="developer-identity-block">
+                        <div class="dev-avatar-frame">
+                            <div class="avatar-matrix-placeholder">
+                                <span>SK // 01</span>
+                            </div>
+                            <div class="corner-bracket top-left"></div>
+                            <div class="corner-bracket bottom-right"></div>
+                        </div>
+                        
+                        <div class="dev-meta-title">
+                            <span class="member-role">Founder / Lead Software Engineer</span>
+                            <h3 class="member-name">Swarnim Koratkar</h3>
+                        </div>
+                    </div>
+
+                    <div class="developer-parameters-box">
+                        <div class="param-line" style="grid-template-columns: 1fr; margin-bottom: 1rem; border-bottom: 1px dashed rgba(255,0,60,0.15); padding-bottom: 1rem;">
+                            <span class="param-value" style="font-style: italic; color: #bbb;">
+                                "Specializing in highly fluid mechanical loops and real-time interactive game systems. Engineering robust mobile architectures and gameplay mechanics."
+                            </span>
+                        </div>
+
+                        <div class="param-line">
+                            <span class="param-label">Primary Engine :</span>
+                            <span class="param-value accent-text">Unity 6 (URP/HDRP)</span>
+                        </div>
+                        <div class="param-line">
+                            <span class="param-label">Core Architecture :</span>
+                            <span class="param-value">Advanced C# / Custom Logic Loops</span>
+                        </div>
+                        <div class="param-line">
+                            <span class="param-label">Systems Logic :</span>
+                            <span class="param-value">Network Sync / UI Toolkit Frameworks</span>
+                        </div>
+                        <div class="param-line">
+                            <span class="param-label">Deployment Opts :</span>
+                            <span class="param-value">Android APK / Mesh Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="developer-status-footer">
+                        <div class="status-beacon pulsing"></div>
+                        <span class="status-text">Pipeline Status: Available for Projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION WITH LINKEDIN OPTION & FORMSPREE -->
+        <section id="contact" class="terminal-input-section">
+            <span class="section-tagline">Initiate Inquiry</span>
+            <h2 class="clean-section-header" data-glitch="Contact Us">Contact Us</h2>
+            <div class="contact-split-layout">
+                <div class="contact-info-panel">
+                    <h2 class="contact-main-heading">Let's build<br>your game.</h2>
+                    <p class="contact-panel-desc">Reach out for game mechanics prototyping, gameplay programming contracts, or complete production builds.</p>
+                    
+                    <div class="direct-commlink">
+                        <span>Direct Communication Channel</span>
+                        <strong>skgamedev@gmail.com</strong>
+                    </div>
+
+                    <!-- LinkedIn Direct Connect Block -->
+                    <div class="linkedin-channel-box">
+                        <span>Professional Network</span>
+                        <a href="https://www.linkedin.com/in/swarnim-koratkar-091697433?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="linkedin-direct-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <span>Connect on LinkedIn ↗</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-terminal-container">
+                    <!-- Form hooked to Formspree for instant inbox delivery -->
+                    <form class="raw-developer-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <div class="form-input-line">
+                            <span class="input-prompt">Identity</span>
+                            <input type="text" name="name" class="terminal-field" placeholder="Your name or studio" required>
+                        </div>
+                        <div class="form-input-line">
+                            <span class="input-prompt">Email Address</span>
+                            <input type="email" name="email" class="terminal-field" placeholder="client@domain.com" required>
+                        </div>
+                        <div class="form-input-line">
+                            <span class="input-prompt">Project Scope</span>
+                            <textarea name="message" class="terminal-field textarea-field" placeholder="Describe your game loop, mechanics, or platform requirements..." required></textarea>
+                        </div>
+                        <div class="form-input-line slider-line">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="input-prompt">Estimated Budget Allocation</span>
+                                <span id="budget-active-display" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color);">Scale Build</span>
+                            </div>
+                            <div class="slider-wrapper">
+                                <input type="range" name="budget_tier" id="budget-slider-input" class="terminal-slider" min="1" max="5" value="3" step="1">
+                                <div class="slider-labels">
+                                    <span>Prototype</span>
+                                    <span>Indie Tier</span>
+                                    <span>Scale Build</span>
+                                    <span>Full Production</span>
+                                    <span>Enterprise</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="premium-submit-btn">
+                            <span>Send Transmission</span>
+                            <div class="btn-line"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY MODAL -->
+        <div id="privacy-portal" class="policy-modal-overlay">
+            <div class="policy-modal-window">
+                <div class="policy-modal-header">
+                    <div class="policy-tracker">
+                        <span class="policy-sub">PRIVACY POLICY</span>
+                        <h2 class="policy-main-title">PRIVACY POLICY</h2>
+                    </div>
+                    <button class="portal-close-btn" onclick="togglePrivacyPortal(false)">&times;</button>
+                </div>
+                <div class="policy-modal-body">
+                    <div class="policy-manifest-quote">Bloody Skulls respects your privacy. Submitted inquiry data is kept solely for project communication.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERMS MODAL -->
+        <div id="terms-portal" class="policy-modal-overlay">
+            <div class="policy-modal-window">
+                <div class="policy-modal-header">
+                    <div class="policy-tracker">
+                        <span class="policy-sub">TERMS OF SERVICE</span>
+                        <h2 class="policy-main-title">TERMS & CONDITIONS</h2>
+                    </div>
+                    <button class="portal-close-btn" onclick="toggleTermsPortal(false)">&times;</button>
+                </div>
+                <div class="policy-modal-body">
+                    <div class="policy-manifest-quote">By using this website, you agree to fair use of studio materials and intellectual properties.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTERNSHIP MODAL -->
+        <div id="internship-portal" class="policy-modal-overlay">
+            <div class="policy-modal-window">
+                <div class="policy-modal-header">
+                    <div class="policy-tracker">
+                        <span class="policy-sub">STUDIO TALENT INITIATIVE</span>
+                        <h2 class="policy-main-title">INTERNSHIPS & PIPELINE</h2>
+                    </div>
+                    <button class="portal-close-btn" onclick="toggleInternshipPortal(false)">&times;</button>
+                </div>
+                <div class="policy-modal-body">
+                    <div class="policy-manifest-quote">
+                        We collaborate with passionate student engineers and technical artists seeking real-world production experience.
+                    </div>
+                    <div class="policy-section-node">
+                        <h3>FOCUS AREAS</h3>
+                        <p>Unity 6 system logic, C# gameplay mechanics, 3D low-poly asset creation, and performance optimization.</p>
+                    </div>
+                    <div class="policy-section-node">
+                        <h3>HOW TO APPLY</h3>
+                        <p>Email your portfolio or build links directly to <strong>skgamedev@gmail.com</strong> with the subject line <code>[Internship Application]</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="studio-terminal-footer">
+            <div class="footer-control-matrix">
+                <div class="footer-meta-left">
+                    &copy; 2026 BLOODY SKULLS. All Rights Reserved.
+                </div>
+                
+                <div class="footer-meta-center">
+                    <a href="javascript:void(0)" class="footer-link" onclick="togglePrivacyPortal(true)">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="footer-link" onclick="toggleTermsPortal(true)">Terms of Service</a>
+                    <a href="javascript:void(0)" class="footer-link internship-footer-link" onclick="toggleInternshipPortal(true)">Careers / Internship</a>
+                </div>
+                
+                <div class="footer-meta-right">
+                    FOUNDED BY SWARNIM KORATKAR
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function togglePlayPause(btn) {
+            const video = btn.closest('.spec-media-frame').querySelector('video');
+            if (video.paused) {
+                video.play();
+                btn.textContent = '⏸';
+            } else {
+                video.pause();
+                btn.textContent = '▶';
+            }
+        }
+
+        function toggleMute(btn) {
+            const video = btn.closest('.spec-media-frame').querySelector('video');
+            if (video.muted) {
+                video.muted = false;
+                btn.textContent = '🔊';
+            } else {
+                video.muted = true;
+                btn.textContent = '🔇';
+            }
+        }
+
+        function toggleFullscreen(btn) {
+            const video = btn.closest('.spec-media-frame').querySelector('video');
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        }
+
+        // Live Budget Slider Label Tracker
+        const budgetSlider = document.getElementById('budget-slider-input');
+        const budgetDisplay = document.getElementById('budget-active-display');
+        const budgetLabels = ['Prototype', 'Indie Tier', 'Scale Build', 'Full Production', 'Enterprise'];
+        if (budgetSlider && budgetDisplay) {
+            budgetSlider.addEventListener('input', (e) => {
+                budgetDisplay.textContent = budgetLabels[parseInt(e.target.value) - 1];
+            });
+        }
+    </script>
+</body>
+</html>
